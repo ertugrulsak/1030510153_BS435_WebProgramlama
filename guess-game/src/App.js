@@ -1,8 +1,8 @@
 import React, {useState} from "react";
-
+import "./game.css";
 
 function App() {
-    const [user, setUser] = useState('');
+
     const [randomNumber, setRandomNumber] = useState(0);
 
     const generateRandomNumber = () => {
@@ -11,9 +11,9 @@ function App() {
     };
 
     return (
-        <div>
-            <button onClick={generateRandomNumber}>Random Sayı Üret</button>
-            {randomNumber}
+        <div className="game-container">
+            <button className="random-button" onClick={generateRandomNumber}>Random Sayı</button> <br/>
+            <p className="show-number">{randomNumber}</p>
         </div>
     );
 }
