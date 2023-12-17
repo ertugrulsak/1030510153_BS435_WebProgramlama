@@ -12,7 +12,7 @@ function App() {
 
     return (
         <div className="game-container">
-            <button className="random-button" onClick={generateRandomNumber}>Random Sayı Üret</button> <br/>
+            <button className="random-button" onClick={generateRandomNumber}>Random Sayı</button> <br/>
             <p className="show-number">{randomNumber}</p>
         </div>
     );
